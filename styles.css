@@ -1,0 +1,157 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.enroll-btn {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video {
+    display: flex;
+    gap: 20px;
+}
+
+.video-player {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    text-align: center;
+}
+
+.video-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.video-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+label {
+    flex: 1; /* Allows the label to take up remaining space */
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+span {
+    margin-left: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.video-checkbox {
+    appearance: none; /* Removes default checkbox styling */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.video-checkbox:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.video-checkbox:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #007bff;
+    width: 0%;
+    height: 100%;
+}
+
+.tabbed-interface {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.tab.active {
+    background-color: #007BFF;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}

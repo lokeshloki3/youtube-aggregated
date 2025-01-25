@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Aggregated Free Skill Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Free Skill Course: Web security</h1>
+        <div class="video">
+            <section class="video-player">
+                <div id="player"></div>
+                <h2>Web Security</h2>
+                <p id="video-summary"></p>
+            </section>
+
+            <div class="side">
+                <div class="btn">
+                    <button class="enroll-btn">Enroll Course</button>
+                </div>
+
+                <section class="video-list">
+                    <ul>
+                        <li>
+                            <label for="video1"><span>1</span> Introduction to Web Security (5:23)</label>
+                            <span>10K Views</span>
+                            <input type="checkbox" id="video1" class="video-checkbox" checked>
+                        </li>
+                        <li>
+                            <label for="video2"><span>2</span> Fundamentals (12:10)</label>
+                            <span>5K Views</span>
+                            <input type="checkbox" id="video2" class="video-checkbox">
+                        </li>
+                        <li>
+                            <label for="video3"><span>3</span> Chapter 1 (8:45)</label>
+                            <span>8K Views</span>
+                            <input type="checkbox" id="video3" class="video-checkbox">
+                        </li>
+                        <li>
+                            <label for="video4"><span>4</span> Chapter 2 (8:45)</label>
+                            <span>8K Views</span>
+                            <input type="checkbox" id="video4" class="video-checkbox">
+                        </li>
+                    </ul>                    
+                </section>
+            </div>
+        </div>
+        <section class="progress-tracker">
+            <h2>Progress Tracker</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 25%;"></div>
+            </div>
+            <p></p>
+        </section>
+
+        <section class="tabbed-interface">
+            <div class="tabs">
+                <button class="tab active" data-tab="files">Attached Files</button>
+                <button class="tab" data-tab="comments">Comments</button>
+                <button class="tab" data-tab="reviews">Critique Reviews</button>
+                <button class="tab" data-tab="challenges">Challenges</button>
+                <button class="tab" data-tab="more">More from Jesse</button>
+            </div>
+            <div class="tab-content">
+                <div class="content active" id="files">
+                    <p>No files attached yet.</p>
+                </div>
+                <div class="content" id="comments">
+                    <p>Comments will appear here.</p>
+                </div>
+                <div class="content" id="reviews">
+                    <p>Critique reviews data will show here.</p>
+                </div>
+                <div class="content" id="challenges">
+                    <p>Challenges related to the course will be displayed here.</p>
+                </div>
+                <div class="content" id="more">
+                    <p>More content from Jesse will be displayed here.</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
